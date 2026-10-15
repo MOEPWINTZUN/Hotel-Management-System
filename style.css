@@ -1,0 +1,355 @@
+
+.nav {
+  background: #f7f3e7;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d4c7a9;
+  font-family: Georgia, serif;
+}
+.bgc{
+  background-color: #f7f3e7;
+}
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #676450;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #676450;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dropbtn:hover {
+  color: #b89149;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 170px;
+  box-shadow: 0px 3px 12px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  padding: 10px 0;
+  z-index: 100;
+}
+
+.dropdown-content a {
+  color: #3a2e1f;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0e7d3;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.hero {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    background: url('Images/hotel.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 15, 15, 0.55);
+    
+}
+
+.hero .content {
+    position: relative;
+    text-align: center;
+    color: #e0d9a8; 
+}
+
+.hero h4 {
+    letter-spacing: 4px;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+    letter-spacing: 12px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #e9e5cc;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #e6d896;
+    color: #333;
+    border-radius: 30px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #fff0b2;
+    transform: translateY(-3px);
+}
+
+.hotel{
+    display: flex;
+    height: 130vh;
+    background-color: #f7f3e7;
+}
+
+
+.left {
+    flex: 1;
+    padding: 50px;
+    border-right: 2px solid #D3C6B2;
+    text-align: center;
+}
+
+.hotelimg {
+    width: 100%;
+    max-width: 400px;
+}
+
+.left img {
+  width: 80%;
+}
+
+.feature{
+    margin-top: 25px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.feature-desc {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* RIGHT PANEL (FORM) */
+.form {
+    flex: 1;
+    padding: 60px;
+}
+
+.form-title {
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.input-box {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border: 1px solid #C9C1B7;
+    background: #FFF;
+    font-size: 14px;
+}
+
+.btn-submit {
+    width: 100%;
+    background: #F26F31;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background: #d75d26;
+}
+
+/* ---- Page Container ---- */
+.hview {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.hviewtitle{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 600;
+}
+
+
+/* ---- Table Wrapper ---- */
+.htablee{
+    overflow-x: auto;
+}
+
+/* ---- Table ---- */
+.htable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+    font-family: Arial, sans-serif;
+}
+
+.htable thead tr th {
+    text-align: left;
+    padding: 14px 20px;
+    font-size: 14px;
+    color: #666;
+    font-weight: 600;
+}
+
+.hotel-row {
+    background: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    border-radius: 12px;
+}
+
+.hotel-row td {
+    padding: 18px 20px;
+    font-size: 15px;
+    color: #333;
+}
+
+/* First & last cell rounded */
+.hotel-row td:first-child {
+    border-radius: 12px 0 0 12px;
+}
+.hotel-row td:last-child {
+    border-radius: 0 12px 12px 0;
+}
+
+/* ---- Actions Column ---- */
+.actions-col {
+    text-align: center;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* ---- Buttons ---- */
+.edit-btn,
+.delete-btn {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.edit-btn {
+    background: #e2f0ff;
+}
+
+.edit-btn:hover {
+    background: #bcdcff;
+}
+
+.delete-btn {
+    background: #ffe5e5;
+}
+
+.delete-btn:hover {
+    background: #ffbcbc;
+}
+
+.form select {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+
+    font-size: 15px;
+    color: #000;
+
+    border-radius: 6px;
+    border: 1px solid #d6d6d6;
+    background-color: #ffffff;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    /* dropdown arrow */
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' fill='%23000' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 5l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 14px;
+}
+
+/* Focus effect (same as screenshot) */
+.form select:focus {
+    outline: none;
+    border-color: #000;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 16px 0;
+
+    font-size: 14px;
+    color: #555;
+
+    border-top: 1px solid #e0e0e0;
+    background-color: #f7f3e7;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
